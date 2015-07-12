@@ -9,3 +9,5 @@ Validate types in Angular 1.x templates using  the TypeScript compiler service.
 * provide Gulp and Grunt wrappers. 
 * support angular2 templates 
 
+# Proposed Example
+    <!-- ts-html vm: LoginController -->

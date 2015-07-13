@@ -11,6 +11,7 @@ Validate types in Angular 1.x templates using  the TypeScript compiler service.
 
 # Proposed Example
 In `views/login.html`
+
     <!-- ts-html vm: LoginController -->
     <div>
         <input ng-model="vm.request.user" />
@@ -18,12 +19,14 @@ In `views/login.html`
     </div>
     
 In `LoginController.ts`
+
     export class LoginController() {
         
         public request: ILoginRequest = {};
     }
     
 And we have a shared contract with a backend
+
     declare interface ILoginRequest {
         user: string;
         password: string;

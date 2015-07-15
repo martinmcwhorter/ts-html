@@ -31,3 +31,5 @@ And we have a shared contract with a backend
         user: string;
         password: string;
     }
+
+Now if we changed `user` in `ILoginRequest` to `userName` without updating the view, ts-html should report an error. Ideally we would have a watch running as part of the developers workflow and ts-html would be able to break builds in CI. 
